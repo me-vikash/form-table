@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="col-xs-4">
+        <form>
+            <div class="form-group">
+                <label for="uname">Name</label> &nbsp;
+                <input type="text" class="form-control" name="person_name" id="uname" placeholder="">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="uemail">Email</label> &nbsp;
+                <input type="email" class="form-control" name="email" id="uemail" placeholder="">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="uage">Age</label> &nbsp; &nbsp;
+                <input type="text" class="form-control" name="person_age" id="uage" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="ugender">Gender</label>
+                <select class="form-control" id="ugender">
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <br>
+            <button class="btn btn-primary save" onclick="formTable.validateForm()">Save</button>
+        </form>
+    </div>
+    <table class="table new-table" id="usersTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Action</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="usersList">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/code.js"></script>
+</html>
